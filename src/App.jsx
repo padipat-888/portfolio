@@ -18,23 +18,33 @@ function App() {
     });
   }
 
-  const changeColor = () => {
-
+  const changeColor = (name) => {
+    if(name === "html") {
+      เปลี่ยนสี
+    }
   };
 
   return (
     <>
       <GoTop />
 
-      
-      <button name='html' 
-      className="rounded-md hover:bg-sky-500 focus:outline-none focus:ring focus:ring-red-500 bg-white p-1 m-1"
-      onClick = {changeColor()}
-      >
-        test1
-      </button><br/>
+        <button
+        className="
+        fixed top-[80px] right-[40px] border-2 border-black rounded-md hover:bg-sky-300 focus:outline-none focus:ring focus:ring-red-500 bg-white p-1 m-1"
+        onClick={() => scrollToSection(goExperience)} 
+        >
+          Experience
+        </button>
+        <button
+        className="
+        fixed top-[120px] right-[40px] border-2 border-black rounded-md hover:bg-sky-300 focus:outline-none focus:ring focus:ring-red-500 bg-white p-1 m-1"
+        onClick={() => scrollToSection(goProject)} 
+        >
+          Project
+        </button>
+ 
 
-      <button name='1' className='bg-red-500'>test2</button>
+     
 
 
       <div className='frame-all flex flex-row justify-center gap-20 mt-20 mb-20'>
@@ -55,8 +65,9 @@ function App() {
             <div className='frame-contact flex flex-col items-start bg-blue-500'>
               <p>tel : 085-120-7266</p>
               <p>email : padipat.p10@gmail.com</p>
-              <p>linkedin : linkedin.com/padipat888</p>
-              <p>github : github.com/padipat-888</p>
+              <a target="_blank" href='https://www.linkedin.com/in/padipat-pajanra/'>linkedin : linkedin.com/in/padipat-pajanra/</a>
+              <a target="_blank" href='https://github.com/padipat-888'>github : github.com/padipat-888</a>
+              
             </div>  {/* end frame-contact // frame-bio */}
           </div>  {/* end frame-bio // frame-left */}
 
@@ -98,9 +109,9 @@ function App() {
 
         <div className='frame-right flex flex-col w-2/6 gap-10'>
 
-          <div className='frame-experience flex flex-col gap-5 bg-gray-300'>
-            <button ref={goExperience} onClick={() => scrollToSection(goExperience)} 
-            className="rounded-md hover:bg-sky-500 focus:outline-none focus:ring focus:ring-red-500 bg-white p-1 m-1">
+          <div ref={goExperience} className='frame-experience flex flex-col gap-5 bg-gray-300'>
+            <button  onClick={() => scrollToSection(goExperience)} 
+            className="border-2 border-black rounded-md hover:bg-sky-300 focus:outline-none focus:ring focus:ring-red-500 bg-white p-1 m-1">
             Experience
             </button> 
             <div className='frame-experience-list flex flex-col bg-gray-200 p-3'>
@@ -159,9 +170,9 @@ function App() {
              {/* end frame-experience-list // frame-experience */}
           </div> {/* end frame-experience // frame-right */}
 
-          <div className='frame-project flex flex-col gap-5 bg-gray-300'>
-            <button ref={goProject} onClick={() => scrollToSection(goProject)} 
-            className="rounded-md hover:bg-sky-500 focus:outline-none focus:ring focus:ring-red-500 bg-white p-1 m-1">
+          <div ref={goProject} className='frame-project flex flex-col gap-5 bg-gray-300'>
+            <button  onClick={() => scrollToSection(goProject)} 
+            className="border-2 border-black rounded-md hover:bg-sky-300 focus:outline-none focus:ring focus:ring-red-500 bg-white p-1 m-1">
             Project
             </button> 
             <div className='frame-project-list flex flex-col bg-gray-200 p-3'>
