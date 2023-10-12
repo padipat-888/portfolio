@@ -312,15 +312,25 @@ function App() {
                 July - October 2023
               </div>
               <div className='company-work p-2'>
-                full-stack developer
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda animi voluptates libero? Explicabo unde excepturi obcaecati eos tempore voluptatem inventore ipsa a officiis quisquam! Unde aliquid accusantium maiores corporis repellendus.
+                <p>
+                  บูทแคมป์ full-stack web developer โดยใช้ mern stack (MongoDB, Express, React, NodeJS) พร้อมการ product deploy เพื่อใช้งานจริง
+                  เสริมด้วย soft skills การพัฒนาตนเองทั้ง mindsets และ behavioral skills
+                </p>
               </div>
-              <div className='company-skill p-2'>
+
+              <div className='flex flex-row justify-between'>
+                <div className='project-skill p-2'>
                 <button className='rounded-full shadow-md bg-white p-2 m-1 text-sm font-bold'>HTML</button>
                 <button className='rounded-full shadow-md bg-white p-2 m-1 text-sm font-bold '>CSS</button>
                 <button className='rounded-full shadow-md bg-white p-2 m-1 text-sm font-bold '>Javascript</button>
                 <button className='rounded-full shadow-md bg-white p-2 m-1 text-sm font-bold '>React</button>
                 <button className='rounded-full shadow-md bg-white p-2 m-1 text-sm font-bold '>MongoDB</button>
+                </div>
+                <div className='flex flex-row justify-end '> 
+                    <a href='https://thailand.generation.org/' target='_blank'> 
+                      <button className='h-10 rounded-lg shadow-md hover:scale-90 bg-sky-300 border-black border-2 p-2 m-1 text-sm font-bold '>visit site</button>
+                    </a>
+                </div>
               </div>
             </div> {/* end frame-experience-list // frame-experience */}
 
