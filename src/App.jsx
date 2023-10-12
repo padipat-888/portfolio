@@ -123,7 +123,7 @@ function App() {
                 About me
             </h2>
             <p className='p-2'>
-              I am graduated from JSD Generation Thailand program. Previously, I have gained 2 years of experience in customer support and sales coordinator roles. I am adaptable and work well as part of a team. I have experience in communicating and coordinating with customers.
+              ประสบการณ์ 2 ปีในงาน sales coordinator, customer support จบการศึกษาจากโครงการ Junior Software Developer จาก Generation Thailand และย้ายสายเข้ามาทำงานสายเทค พร้อมลุยกับงานท้าทายใหม่ๆ
             </p>
           </div> {/* end frame-about // frame-right */}
 
@@ -215,7 +215,7 @@ function App() {
                 React Assessment
               </div>
               <div className='project-work p-2'>
-              เว็บไซต์สำหรับจัดการข้อมูล โดยใช้ crud เบื้องต้น create, read, update, delete
+              เว็บไซต์สำหรับทดสอบการจัดการข้อมูล โดยใช้ crud เบื้องต้น create, read, update, delete
               </div>
               <div className='flex flex-row justify-between'>
                 <div className='project-skill p-2'>
@@ -241,11 +241,11 @@ function App() {
             </div> 
 
             <div className='frame-project-list flex flex-col bg-gray-200 rounded-md p-3'>
-              <div className='project-name text-2xl font-bold'>
+              <div className='project-name text-2xl font-bold p-2'>
                 Find My Hat
               </div>
               <div className='project-work p-2'>
-                เกมค้นหาหมวกในแผนที่แบบสุ่ม โดยห้ามตกหลุมกับดักและห้ามตกขอบแผนที่
+                เกมค้นหาหมวกในแผนที่แบบสุ่ม โดยห้ามเดินตกหลุมกับดักและห้ามเดินตกขอบแผนที่
               </div>
               <div className='flex flex-row justify-between'>
                 <div className='project-skill p-2'>
@@ -268,8 +268,8 @@ function App() {
             </div> 
 
             <div className='frame-project-list flex flex-col bg-gray-200 rounded-md p-3'>
-              <div className='project-name text-2xl font-bold'>
-              Colmar Academy
+              <div className='project-name text-2xl font-bold p-2'>
+                Colmar Academy
               </div>
               <div className='project-work p-2'>
                 เว็บไซต์แสดงคอส์สเรียนออนไลน์ เป็นการจำลองการออกแบบหน้าเว็บไซต์
