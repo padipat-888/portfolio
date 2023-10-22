@@ -201,7 +201,7 @@ function App() {
           <div ref={goProject} className='frame-project flex flex-col rounded-md gap-5 bg-gray-300'>
             <button  onClick={() => scrollToSection(goProject)} 
             className="border-2 border-black text-xl font-bold hover:font-normal rounded-md  focus:outline-none focus:ring focus:ring-red-500 bg-white hover:bg-sky-300 p-2 m-1 ">
-            Project
+            Projects
             </button> 
 
             <div className='frame-project-list flex flex-col bg-gray-200 rounded-md p-2'>
