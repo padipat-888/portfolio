@@ -4,9 +4,10 @@ import GoTop from './GoTop.jsx';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { GrDocumentDownload } from 'react-icons/gr';
 import { MdEmail } from 'react-icons/md';
+import { Tooltip, Button } from "@material-tailwind/react";
 
 // https://brittanychiang.com/
-
+// https://portfolio-padipat.vercel.app/
 
 function App() {
 
@@ -108,11 +109,20 @@ function App() {
               </h2>
             </div> {/* end frame-role // frame-bio */}
             <div className='frame-contact  shadow-md flex flex-col items-start rounded-md p-4 bg-gray-200 '>
+              <Tooltip
+                content="click to copy" className='bg-gray-100 text-black text-normal font-bold'
+                animate={{
+                  mount: { scale: 1, y: 30, x: -180, },
+                  unmount: { scale: 0, y: 25 },
+                }}
+              >
               <div className='flex flex-row gap-2'>
                 <button className='hover:scale-150' onClick={() => handleCopy('padipat.p10@gmail.com')}><MdEmail className='mt-1'/></button>
                 <button className='hover:font-extrabold' onClick={() => handleCopy('padipat.p10@gmail.com')}>padipat.p10@gmail.com     </button>
                 {copied && <div className='text-normal font-bold'>Copied</div>}
               </div>
+              </Tooltip>
+
               <div className='flex flex-row gap-2'>
                 <a className='hover:scale-150' target="_blank" href='https://www.linkedin.com/in/padipat-pajanra/'><BsLinkedin className=' mt-1 '/></a>
                 <a className='hover:font-extrabold' target="_blank" href='https://www.linkedin.com/in/padipat-pajanra/'>linkedin.com/in/padipat-pajanra</a>
