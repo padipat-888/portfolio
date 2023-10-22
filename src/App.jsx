@@ -3,7 +3,9 @@ import React, { useState, useEffect, useRef } from "react";
 import GoTop from './GoTop.jsx';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { GrDocumentDownload } from 'react-icons/gr';
+import { MdEmail } from 'react-icons/md';
 
+// https://brittanychiang.com/
 
 
 function App() {
@@ -29,11 +31,11 @@ function App() {
     });
   }
 
-  const changeColor = (name) => {
-    if(name === "html") {
-      เปลี่ยนสี
-    }
-  };
+  // const changeColor = (name) => {
+  //   if(name === "html") {
+  
+  //   }
+  // };
 
   return (
     <div className="frame-container bg-gray-100 " >
@@ -80,10 +82,10 @@ function App() {
           <p className=" top-0 left-0 w-full h-full flex items-center justify-center text-black text-normal font-bold  opacity-0 group-hover:opacity-100 transition-opacity">
             download resume
           </p>
-        </div>
+        </div> 
       </div>
 
-      {/* <div className="group relative">
+      {/*  <div className="group relative">
         <img src="your-image.jpg" alt="Your Image" className="w-64 h-64 object-cover" />
         <p className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white text-lg bg-black bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity">
           Hover Text
@@ -106,13 +108,24 @@ function App() {
               </h2>
             </div> {/* end frame-role // frame-bio */}
             <div className='frame-contact  shadow-md flex flex-col items-start rounded-md p-4 bg-gray-200 '>
-              <div className='flex flex-row gap-5'>
-                <button className='hover:font-extrabold' onClick={() => handleCopy('padipat.p10@gmail.com')}>padipat.p10@gmail.com</button>
+              <div className='flex flex-row gap-2'>
+                <button className='hover:scale-150' onClick={() => handleCopy('padipat.p10@gmail.com')}><MdEmail className='mt-1'/></button>
+                <button className='hover:font-extrabold' onClick={() => handleCopy('padipat.p10@gmail.com')}>padipat.p10@gmail.com     </button>
                 {copied && <div className='text-normal font-bold'>Copied</div>}
               </div>
-              <a className='hover:font-extrabold' target="_blank" href='https://www.linkedin.com/in/padipat-pajanra/'>linkedin.com/in/padipat-pajanra/</a>
-              <a className='hover:font-extrabold' target="_blank" href='https://github.com/padipat-888'>github.com/padipat-888</a>
-              <a className='hover:font-extrabold' target="_blank" href='https://docs.google.com/document/d/1jWqvjegDoz-oJ4Ce29bZQXNlEzBNAfpEonOszUPBOCc/edit?usp=sharing' >download resume</a>
+              <div className='flex flex-row gap-2'>
+                <a className='hover:scale-150' target="_blank" href='https://www.linkedin.com/in/padipat-pajanra/'><BsLinkedin className=' mt-1 '/></a>
+                <a className='hover:font-extrabold' target="_blank" href='https://www.linkedin.com/in/padipat-pajanra/'>linkedin.com/in/padipat-pajanra</a>
+              </div>
+              <div className='flex flex-row gap-2'>           
+                <a className='hover:scale-150' target="_blank" href='https://github.com/padipat-888'><BsGithub className=' mt-1'/></a>
+                <a className='hover:font-extrabold' target="_blank" href='https://github.com/padipat-888'>github.com/padipat-888</a>
+              </div>
+              <div className='flex flex-row gap-2'>
+                <a className='hover:scale-150' target="_blank" href='https://docs.google.com/document/d/1jWqvjegDoz-oJ4Ce29bZQXNlEzBNAfpEonOszUPBOCc/edit?usp=sharing'><GrDocumentDownload className=' mt-1'/></a>
+                <a className='hover:font-extrabold' target="_blank" href='https://docs.google.com/document/d/1jWqvjegDoz-oJ4Ce29bZQXNlEzBNAfpEonOszUPBOCc/edit?usp=sharing' >download resume</a> 
+              </div>
+
             </div>  {/* end frame-contact // frame-bio */}
           </div>  {/* end frame-bio // frame-left */}
 
@@ -133,7 +146,7 @@ function App() {
             </h2>
             <button className='rounded-full shadow-md bg-white p-2 m-1 text-sm font-bold '>HTML</button>
             <button className='rounded-full shadow-md bg-white p-2 m-1 text-sm font-bold '>CSS</button>
-            <button className='rounded-full shadow-md bg-white p-2 m-1 text-sm font-bold '>Javasript</button>
+            <button className='rounded-full shadow-md bg-white p-2 m-1 text-sm font-bold '>Javascript</button>
             <button className='rounded-full shadow-md bg-white p-2 m-1 text-sm font-bold '>React</button>
             <button className='rounded-full shadow-md bg-white p-2 m-1 text-sm font-bold '>MongoDB</button>
 
@@ -272,7 +285,7 @@ function App() {
                 Colmar Academy
               </div>
               <div className='project-work p-2'>
-                เว็บไซต์แสดงคอส์สเรียนออนไลน์ เป็นการจำลองการออกแบบหน้าเว็บไซต์
+                เว็บไซต์แสดงคอร์สเรียนออนไลน์ เป็นการจำลองการจัดวางองค์ประกอบของหน้าเว็บไซต์
               </div>
               <div className='flex flex-row justify-between'>
                 <div className='project-skill p-2'>
