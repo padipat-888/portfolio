@@ -112,14 +112,14 @@ function App() {
               <Tooltip
                 content="click to copy" className='bg-gray-100 text-black text-normal font-bold'
                 animate={{
-                  mount: { scale: 1, y: 30, x: -180, },
+                  mount: { scale: 1, y: 0, x: 0, },
                   unmount: { scale: 0, y: 25 },
                 }}
               >
               <div className='flex flex-row gap-2'>
                 <button className='hover:scale-150' onClick={() => handleCopy('padipat.p10@gmail.com')}><MdEmail className='mt-1'/></button>
                 <button className='hover:font-extrabold' onClick={() => handleCopy('padipat.p10@gmail.com')}>padipat.p10@gmail.com     </button>
-                {copied && <div className='text-normal font-bold'>Copied</div>}
+                {copied && <div className='text-normal font-bold'>Copied</div> }
               </div>
               </Tooltip>
 
