@@ -110,7 +110,7 @@ function App() {
             </div> {/* end frame-role // frame-bio */}
             <div className='frame-contact  shadow-md flex flex-col items-start rounded-md p-4 bg-gray-200 '>
               <Tooltip
-                content="click to copy" className='bg-gray-100 text-black text-normal font-bold'
+                content="click to copy" className='bg-gray-200 text-black text-normal font-bold'
                 animate={{
                   mount: { scale: 1, y: 0, x: 0, },
                   unmount: { scale: 0, y: 25 },
