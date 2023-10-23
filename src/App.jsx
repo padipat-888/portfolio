@@ -32,17 +32,13 @@ function App() {
     });
   }
 
-  // const changeColor = (name) => {
-  //   if(name === "html") {
-  
-  //   }
-  // };
+
 
   return (
     <div className="frame-container bg-gray-100 " >
       <GoTop />
 
-      <div className='fixed inset-y-1/3 right-[40px] flex flex-col'>
+      <div className='max-lg:hidden flex flex-col fixed inset-y-1/3 right-[40px] '>
         <button
         className="hover:scale-90 text-sm font-bold
          border-2 border-black rounded-md  focus:outline-none focus:ring focus:ring-red-500 bg-white hover:bg-sky-300 p-2 m-1"
@@ -59,7 +55,7 @@ function App() {
         </button>
       </div>
 
-      <div className='fixed inset-y-1/3 left-[40px] flex flex-col'>
+      <div className='max-lg:hidden flex flex-col fixed inset-y-1/3 left-[40px] '>
         <div className='group object-cover flex flex-row'>
           <a className='hover:scale-90' target="_blank" href='https://www.linkedin.com/in/padipat-pajanra/'>
             <BsLinkedin className=' m-2 w-9 h-9 '/>
@@ -93,9 +89,9 @@ function App() {
         </p>
       </div> */}
       
-      <div className='frame-all flex flex-row justify-center gap-20 pt-20 pb-20'>
+      <div className='frame-all max-lg:shrink-0 lg:flex lg:flex-row lg:justify-center max-lg:flex max-lg:flex-col  gap-20 pt-20 pb-20 overflow-hidden'>
 
-        <div className='frame-left flex flex-col w-1/6 gap-10'>
+        <div className='frame-left lg:flex lg:flex-col lg:w-1/6 lg:gap-10 max-lg:ml-10 max-lg:mr-10 flex flex-col overflow-hidden'>
 
           <div className='frame-bio '>
             <div className=' frame-name  shadow-md bg-gray-300 rounded-md p-2'>
@@ -179,24 +175,11 @@ function App() {
 
           </div> {/* end frame-tech-skill // frame-left */}
           
-          {/* <div className='frame-more bg-gray-300  p-2'>
-            <div>
-              Download my CV
-            </div>
-            <div>
-              View full project achive
-            </div>
-            <div>
-            View full experience achive
-            </div>
-          </div>  */}
-          {/* end frame-more // frame-left */}
+
 
         </div> {/* end frame-left */}
 
-        <div className='frame-right flex flex-col w-2/6 gap-10'>
-
-
+        <div className='frame-right lg:flex lg:flex-col lg:w-2/6 lg:gap-10 max-lg:ml-10 max-lg:mr-10 flex flex-col gap-10 overflow-hidden'>
 
           <div ref={goProject} className='frame-project flex flex-col rounded-md gap-5 bg-gray-300'>
             <button  onClick={() => scrollToSection(goProject)} 
@@ -351,7 +334,7 @@ function App() {
                 </div>
                 <div className='flex flex-row justify-end '> 
                     <a href='https://thailand.generation.org/' target='_blank'> 
-                      <button className='h-10 rounded-lg shadow-md hover:scale-90 bg-sky-300 border-black border-2 p-2 m-1 text-sm font-bold '>visit site</button>
+                      <button className='h-10 rounded-lg shadow-md hover:scale-90 bg-sky-300 border-black border-2 p-2 m-1 text-sm font-bold '>visit</button>
                     </a>
                 </div>
               </div>
