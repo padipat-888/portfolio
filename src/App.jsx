@@ -207,11 +207,13 @@ function App() {
                       <p className=" flex items-center justify-center text-black text-normal font-bold  opacity-0 group-hover:opacity-100 transition-opacity">
                         visit my github
                       </p>
-                      <a className='hover:scale-90' target="_blank" href='https://github.com/padipat-888'>
+                      <a className='hover:scale-90' target="_blank" href='https://github.com/padipat-888/hulk-fit-project'>
                         <BsGithub className=' mt-2 mr-2 w-9 h-9'/>
                       </a>
                     </div>
-                    <button className='h-10 rounded-lg shadow-md hover:scale-90 bg-sky-300 border-black border-2 p-2 m-1 text-sm font-bold '>Demo</button>
+                    <a href='https://hulk-fit-project-ten.vercel.app/' target='_blank'>
+                      <button className='h-10 rounded-lg shadow-md hover:scale-90 bg-sky-300 border-black border-2 p-2 m-1 text-sm font-bold '>Demo</button>
+                    </a>
                 </div>
               </div>
             </div> 
