@@ -72,8 +72,8 @@ function App() {
             visit my github
           </p>
         </div>
-        <div className='group object-cover flex flex-row'>
-          <a className='hover:scale-90' target="_blank" href='https://drive.google.com/file/d/19J1g61g_nmxs2PxwVuT7u_VHERO0SU8y/view'>
+        <div className='group object-cover flex flex-row'> 
+          <a className='hover:scale-90' target="_blank" href='https://drive.google.com/file/d/1Pbtfy8ZDuzeQbJxrz3diMaQBJtlZp9f0/view?usp=sharing'>
             <GrDocumentDownload className=' m-2 w-9 h-9'/>
           </a>
           <p className=" top-0 left-0 w-full h-full flex items-center justify-center text-black text-normal font-bold  opacity-0 group-hover:opacity-100 transition-opacity">
@@ -128,8 +128,8 @@ function App() {
                 <a className='hover:font-extrabold' target="_blank" href='https://github.com/padipat-888'>github.com/padipat-888</a>
               </div>
               <div className='flex flex-row gap-2'>
-                <a className='hover:scale-150' target="_blank" href='https://drive.google.com/file/d/19J1g61g_nmxs2PxwVuT7u_VHERO0SU8y/view'><GrDocumentDownload className=' mt-1'/></a>
-                <a className='hover:font-extrabold' target="_blank" href='https://drive.google.com/file/d/19J1g61g_nmxs2PxwVuT7u_VHERO0SU8y/view' >download resume</a> 
+                <a className='hover:scale-150' target="_blank" href='https://drive.google.com/file/d/1Pbtfy8ZDuzeQbJxrz3diMaQBJtlZp9f0/view?usp=sharing'><GrDocumentDownload className=' mt-1'/></a>
+                <a className='hover:font-extrabold' target="_blank" href='https://drive.google.com/file/d/1Pbtfy8ZDuzeQbJxrz3diMaQBJtlZp9f0/view?usp=sharing' >download resume</a> 
               </div>
 
             </div>  {/* end frame-contact // frame-bio */}
